@@ -5,6 +5,7 @@ public class Name {
     Scanner scanner = new Scanner(System.in);
     date.days(scanner);
     scanner.close();
+    
   }
   public int days(Scanner scanner){
     System.out.print("Enter a month number (1-4): ");
