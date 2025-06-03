@@ -22,5 +22,6 @@ public class persona {
         for (int i = 0; i < 4; i++) {
             System.out.println(names[i] + "\t\t" + ages[i] + "\t" + salaries[i]);
         }
+        scanner.close();
     }
 }
