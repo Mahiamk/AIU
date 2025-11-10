@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Professional Contact Form</title>
+  <link rel="icon" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Professional Color Palette */
+    :root {
+      --color-primary: #004c99; /* Deep Blue */
+      --color-primary-hover: #003366;
+      --color-text-dark: #333;
+      --color-text-light: #666;
+      --color-border: #ddd;
+      --color-bg-light: #f4f4f4;
+    }
+
+    body {
+      /* Using Roboto font */
+      font-family: 'Roboto', Arial, sans-serif;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      line-height: 1.5;
+      padding: 20px;
+      color: var(--color-text-dark);
+    }
+
+    .container {
+      background-color: #fff;
+      max-width: 480px; /* Reduced width */
+      margin: 40px auto;
+      padding: 30px; /* Reduced padding */
+      border-radius: 6px; /* Sharper, professional corners */
+      border: 1px solid var(--color-border); /* Subtle border instead of heavy shadow */
+    }
+
+    h1 {
+      color: var(--color-primary);
+      margin-bottom: 5px;
+      font-weight: 500;
+      font-size: 1.8rem; /* Reduced size */
+    }
+
+    .container > p { /* Target the intro paragraph */
+      margin-bottom: 20px; /* Reduced margin */
+      color: var(--color-text-light);
+      font-size: 0.95rem;
+    }
+
+    img.responsive-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px; 
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    /* Form Grouping for better spacing */
+    .form-group {
+      margin-bottom: 15px; /* Reduced space between fields */
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500; /* Medium weight */
+      color: var(--color-text-dark);
+      font-size: 0.9rem; /* Reduced label size */
+    }
+
+    /* Common style for all form fields */
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px 12px; /* Reduced padding */
+      border-radius: 4px;
+      border: 1px solid var(--color-border);
+      background-color: #fff; /* White background for inputs */
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.95rem;
+      color: var(--color-text-dark);
+      transition: border-color 0.2s;
+    }
+
+    /* Professional Focus State */
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--color-primary); /* Primary blue border */
+      box-shadow: 0 0 0 1px var(--color-primary); /* Thin, sharp focus ring */
+    }
+    
+    textarea {
+        resize: vertical;
+        min-height: 90px; /* Slightly smaller textarea */
+    }
+
+    /* Button Group for side-by-side layout */
+    .button-group {
+      display: flex;
+      gap: 10px; /* Reduced gap */
+      margin-top: 20px;
+    }
+    
+    /* Base button style */
+    button {
+      flex: 1;
+      padding: 10px 15px; /* Reduced button padding */
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem; /* Reduced button text size */
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+      transition: background-color 0.2s, color 0.2s, transform 0.1s;
+    }
+
+    /* Primary "Submit" Button */
+    .btn-submit {
+      background-color: var(--color-primary);
+      color: white;
+    }
+
+    .btn-submit:hover {
+      background-color: var(--color-primary-hover);
+      transform: translateY(-1px); /* Subtle lift */
+    }
+
+    /* Secondary "Nav" Button (Outline/Ghost style) */
+    .btn-nav {
+      background-color: transparent;
+      color: var(--color-text-light);
+      border: 1px solid var(--color-border);
+    }
+
+    .btn-nav:hover {
+      background-color: var(--color-bg-light);
+      color: var(--color-text-dark);
+      border-color: #ccc;
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 500px) {
+      .container {
+        margin: 10px;
+        padding: 20px;
+      }
+      .button-group {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Please fill out the form below to get in touch with our team.</p>
+
+    <form onsubmit="submitForm(event)">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="topic">Subject</label>
+        <select id="topic">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">More Elements</label>
+        <textarea id="message" rows="4" placeholder="write your message here..."></textarea>
+      </div>
+
+      <div class="button-group">
+        <button type="submit" class="btn-submit">Send Message</button>
+        <button type="button" class="btn-nav" onclick="window.location.href='more-elements.html'">
+          More Elements
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault(); 
+      
+      const name = document.getElementById('name').value;
+      if (name.trim() === "") {
+        alert("Please enter your name before submitting!");
+        return;
+      }
+      alert("Thank you, " + name + "! Your request has been sent to our team.");
+    }
+  </script>
+</body>
+</html>
