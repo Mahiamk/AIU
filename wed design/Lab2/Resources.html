@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML Basics — Resources</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#fff;--accent:#0a66c2}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:var(--bg);color:#111}
+    .container{max-width:900px;margin:40px auto;padding:20px}
+    header{display:flex;gap:16px;align-items:center}
+    h1{margin:.1rem 0;font-size:1.6rem}
+    p.lead{margin:.2rem 0 1rem;color:#444}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+    .card{background:var(--card);padding:14px;border-radius:8px;box-shadow:0 1px 3px rgba(16,24,40,.06)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    code{background:#eef3ff;padding:.1rem .3rem;border-radius:4px;font-family:ui-monospace,monospace}
+    pre{background:#0f1724;color:#fff;padding:12px;border-radius:6px;overflow:auto;font-size:.92rem}
+    footer{margin-top:20px;color:#555;font-size:.9rem}
+    ul{margin:.4rem 0 0 1.2rem}
+    .navbar {
+      background-color: #fff;
+      max-width: 980px; 
+      margin: 40px auto;
+      padding: 30px; 
+      border-radius: 6px; 
+      border: 1px solid var(--color-border);
+      color: var(--color-text-dark); 
+    }
+    .navbar a:hover {
+      color: var(--color-primary-hover);
+    }
+  </style>
+</head>
+<body>
+  <nav class = "navbar" style="margin-bottom:10px;">
+    <a href="index.html" style="margin-right:20px; text-decoration:none; color:var(--color-primary); font-weight:500;">Home</a>
+    <a href="Resources.html" style="text-decoration:none; color:var(--color-primary); font-weight:500;">Resources</a>
+  </nav>
+  <main class="container" role="main">
+    <header>
+      <div>
+        <h1>Resources to Learn HTML (Basics)</h1>
+        <p class="lead">A short, curated list of tutorials, references, and practice sites to learn HTML quickly.</p>
+      </div>
+    </header>
+
+    <section class="grid" aria-label="Primary resources">
+      <article class="card">
+        <h2>Getting started</h2>
+        <p>Begin with a simple explanation and a minimal template you can copy:</p>
+        <pre><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;My first page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello HTML&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </article>
+
+      <article class="card">
+        <h2>Tutorials</h2>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" rel="noopener">MDN — Learn HTML</a> (comprehensive, best reference)</li>
+          <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank" rel="noopener">freeCodeCamp — Responsive Web Design</a> (interactive)</li>
+          <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener">W3Schools — HTML Tutorial</a> (beginner-friendly)</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Interactive practice</h2>
+        <ul>
+          <li><a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a> — try examples live</li>
+          <li><a href="https://jsfiddle.net" target="_blank" rel="noopener">JSFiddle</a></li>
+          <li><a href="https://replit.com" target="_blank" rel="noopener">Replit</a> — collaborate and host small projects</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Reference & validation</h2>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference" target="_blank" rel="noopener">MDN HTML reference</a></li>
+          <li><a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Markup Validation Service</a></li>
+          <li><a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener">WHATWG HTML Living Standard</a></li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Books & cheat-sheets</h2>
+        <ul>
+          <li>"HTML and CSS" by Jon Duckett — visual introduction</li>
+          <li><a href="https://htmlcheatsheet.com/" target="_blank" rel="noopener">HTML Cheat Sheet</a></li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Video playlists</h2>
+        <ul>
+          <li><a href="https://www.youtube.com/c/TraversyMedia" target="_blank" rel="noopener">Traversy Media (HTML/CSS tutorials)</a></li>
+          <li><a href="https://www.youtube.com/c/thenewboston" target="_blank" rel="noopener">TheNewBoston</a></li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Beginner projects</h2>
+        <ul>
+          <li>Build a personal profile page (header, bio, image, links)</li>
+          <li>Create a simple multi-section landing page</li>
+          <li>Make a form (contact form) and validate inputs</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Accessibility & best practices</h2>
+        <p>Use semantic elements (&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;), add alt text for images, and test with a validator and keyboard navigation.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility" target="_blank" rel="noopener">MDN Accessibility</a></p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
