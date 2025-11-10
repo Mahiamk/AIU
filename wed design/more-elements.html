@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>More HTML Elements</title>
+  <link rel="icon" href="icon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1e7e34;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>More HTML Elements</h1>
+    <hr>
+
+    <h2>Sample Table</h2>
+    <table>
+      <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Topic</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Ali</td>
+        <td>HTML</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Siti</td>
+        <td>CSS</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Ahmad</td>
+        <td>JavaScript</td>
+      </tr>
+    </table>
+
+    <h2>Ordered List (Steps to Create a Website)</h2>
+    <ol>
+      <li>Create a folder</li>
+      <li>Add your HTML files</li>
+      <li>Include images and videos</li>
+      <li>Style using CSS</li>
+      <li>Test in your browser</li>
+    </ol>
+
+    <h2>Unordered List (Web Tools)</h2>
+    <ul>
+      <li>VS Code</li>
+      <li>Google Chrome</li>
+      <li>GitHub</li>
+      <li>CodePen</li>
+    </ul>
+
+    <h2>Useful Links</h2>
+    <p>Visit these websites for learning more:</p>
+    <a href="https://www.w3schools.com" target="_blank">W3Schools</a><br>
+    <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a><br>
+    <a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a>
+
+    <h2>Introduction Video</h2>
+        <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
+          <iframe 
+            src="https://www.youtube.com/embed/pQN-pnXPaVg" 
+            title="Introduction to HTML"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            style="position:absolute; top:0; left:0; width:100%; height:100%;">
+          </iframe>
+        </div>
+        <noscript>
+          Your browser does not support embedded videos. 
+          Please visit 
+          <a href="https://www.youtube.com/watch?v=pQN-pnXPaVg" target="_blank">this link</a> 
+          to watch it directly on YouTube.
+        </noscript>
+
+    <h2>Background Music</h2>
+    <audio controls>
+      <source src="background.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <br><br>
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+  </div>
+</body>
+</html>
