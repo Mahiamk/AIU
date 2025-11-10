@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Lab Exercise</title>
+  <style>
+        * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --color-primary: #004c99; 
+      --color-primary-hover: #003366;
+      --color-text-dark: #333;
+      --color-text-light: #666;
+      --color-border: #ddd;
+      --color-bg-light: #f4f4f4;
+    }
+
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      line-height: 1.5;
+      padding: 20px;
+      color: var(--color-text-dark);
+    }
+
+    .container {
+      background-color: #fff;
+      max-width: 980px; 
+      margin: 40px auto;
+      padding: 30px; 
+      border-radius: 6px; 
+      border: 1px solid var(--color-border);
+      color: var(--color-text-dark); 
+    }
+
+    h1 {
+      color: var(--color-primary);
+      margin-bottom: 5px;
+      font-weight: 500;
+      font-size: 1.8rem; 
+    }
+
+    .container > p { 
+      margin-bottom: 20px; 
+      color: var(--color-text-light);
+      font-size: 0.95rem;
+    }
+    #list > li > h1{
+      color: var(--color-text-dark);
+    }
+    .container > ol {
+      margin-right: 48px;
+      margin-left: 20px;
+      align-items: center;
+    }
+    .navbar{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      width: 160px;
+      float: left;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+    .navbar a:hover {
+      color: var(--color-primary-hover);
+    }
+    .links {
+      margin-top: 20px;
+    }
+    .image {
+      margin-top: 20px;
+      width: 50%;
+      height: 50%;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      align-items: start;
+    }
+    @media screen and (max-width: 500px) {
+      .container {
+        margin: 10px;
+        padding: 20px;
+      }
+      .button-group {
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <nav class = "container" style="margin-bottom:10px;">
+    <a href="index.html" style="margin-right:20px; text-decoration:none; color:var(--color-primary); font-weight:500;">Home</a>
+    <a href="Resources.html" style="text-decoration:none; color:var(--color-primary); font-weight:500;">Resources</a>
+  </nav>
+  <div class = "container">
+    <h1>LAB EXERCISE</h1>
+    <div>
+      <p>In todays exercise we gonna learn basic html tags and element.</p>
+      <p>For example web pages have many types of headings like <strong>h1</strong>, <strong>h2</strong>,...,<strong>h6</strong>.</p>
+      <ol id="list" style="text-align:left; padding-left:40px; list-style-position: inside;">
+        <li><h1>This is <em>h1</em></h1></li>
+        <li><h2>This is <em>h2</em></h2></li>
+        <li><h3>This is <em>h3</em></h3></li>
+        <li><h4>This is <em>h4</em></h4></li>
+        <li><h5>This is <em>h5</em></h5></li>
+        <li><h6>This is <em>h6</em></h6></li>
+      </ol>
+    </div>
+    <div class ="links">
+      <p>There are two ways to use both external and internal link in our websites.</p>
+      <p>For example you can visit <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a> for more html resources.</p>
+      <p>Also you can visit <a href="Resources.html" target="_blank" rel="noopener noreferrer">Resources</a> for more internal resources.</p>
+    </div>
+    <p>Images can be added to the web page using the <code>&lt;img&gt;</code> tag. Below is an example image:</p>
+    <div class="image">
+      <div class = "column1">
+        <img src="image1.png" alt="Example Image" class = "image1" style="max-width:100%; height:auto; border:1px solid var(--color-border); border-radius:4px;">
+      </div>
+      <div class = "column2">
+        <img src="image1.png" alt="Example Image" class = "image2" style="max-width:100%; height:auto; border:1px solid var(--color-border); border-radius:4px;">
+      </div>
+
+    </div>
+    <div class="tables" style="margin-top: 20px;">
+      <h2>HTML Table Example</h2>
+      <p>Tables are used to display data in a structured format. Below is an example of a simple HTML table:</p>
+      <table style="width:100%; border-collapse: collapse; border: 1px solid var(--color-border);">
+        <tr style="background-color: var(--color-bg-light);">
+          <th style="border: 1px solid var(--color-border); padding: 8px; text-align: left;">Name</th>
+          <th style="border: 1px solid var(--color-border); padding: 8px; text-align: left;">Age</th>
+          <th style="border: 1px solid var(--color-border); padding: 8px; text-align: left;">City</th>
+        </tr>
+        <tr>
+          <td style="border: 1px solid var(--color-border); padding: 8px;">Alice</td>
+          <td style="border: 1px solid var(--color-border); padding: 8px;">30</td>
+          <td style="border: 1px solid var(--color-border); padding: 8px;">New York</td>
+        </tr>
+        <tr style="background-color: var(--color-bg-light);">
+          <td style="border: 1px solid var(--color-border); padding: 8px;">Bob</td>
+          <td style="border: 1px solid var(--color-border); padding: 8px;">25</td>
+          <td style="border: 1px solid var(--color-border); padding: 8px;">Los Angeles</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid var(--color-border); padding: 8px;">Charlie</td>
+          <td style="border: 1px solid var(--color-border); padding: 8px;">35</td>
+          <td style="border: 1px solid var(--color-border); padding: 8px;">Chicago</td>
+        </tr>
+      </table>
+
+    </div>
+    <div class = "form">
+      <h2 style="margin-top:20px;">HTML Form Example</h2>
+      <p>Forms are used to collect user input. Below is an example of a simple HTML form:</p>
+      <form style="border: 1px solid var(--color-border); padding: 16px; border-radius: 4px; max-width: 400px;">
+        <label for="name" style="display:block; margin-bottom:8px;">Name:</label>
+        <input type="text" maxlength="12" required placeholder="John Doe" id="name" name="name" style="width:100%; padding:8px; margin-bottom:12px; border:1px solid var(--color-border); border-radius:4px;">
+        
+        <label for="email" style="display:block; margin-bottom:8px;">Email:</label>
+        <input type="email" placeholder="johndoe@gmail.com" id="email" name="email" style="width:100%; padding:8px; margin-bottom:12px; border:1px solid var(--color-border); border-radius:4px;">
+        
+        <label style="margin-right: 10px;">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" style="margin-left:10px;">
+        <label for="male" style="margin-right: 10px;">Male</label>
+        <input type="radio" id="female" name="gender" value="female" style="margin-left:10px;">
+        <label for="female" style="margin-right: 10px;">Female</label>
+        <input type="radio" id="other" name="gender" value="other" style="margin-left:10px;">
+        <label for="other" style="margin-right: 10px;">Other</label>
+        <br><br>
+        <label for="country">Choose your country:</label>
+          <select id="country" name="country">
+            <option value="ethiopia">Ethiopia</option>
+            <option value="malaysia">Malaysia</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+          </select>
+        <input type="submit" value="Submit" style="background-color: var(--color-primary); color:#fff; padding:10px 15px; border:none; border-radius:4px; cursor:pointer;">
+      </form>
+
+    </div>
+  </div>
+   <script>
+    function submitForm(event) {
+      event.preventDefault(); 
+      
+      const name = document.getElementById('name').value;
+      if (name.trim() === "") {
+        alert("Please enter your name before submitting!");
+        return;
+      }
+      alert("Thank you, " + name + "! Your request has been sent to our team.");
+    }
+  </script>
+
+  
+</body>
+</html>
