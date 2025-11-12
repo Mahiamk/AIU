@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Simple Webpage</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #03b748;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-family: 'Pacifico', cursive;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff7b00;
+    }
+
+    section {
+      padding: 30px;
+      text-align: center;
+      margin: auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: square;
+      text-align: left;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    button {
+      background-color: #03b748;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #03b748;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #333;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>Welcome to My Simple Webpage</header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section>
+    <h2>About This Page</h2>
+    <p>This is an example of a simple HTML webpage using internal CSS. All styles are defined inside the &lt;style&gt; tag in the head section.</p>
+
+    <h3>Features:</h3>
+    <ul>
+      <li>Internal CSS styling</li>
+      <li>Navigation bar</li>
+      <li>Button with hover effect</li>
+      <li>Styled list</li>
+    </ul>
+
+    <br><br>
+    <button>#Click Me</button>
+  </section>
+
+  <footer>© 2025 My Website</footer>
+</body>
+</html>
