@@ -1,0 +1,112 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router1
+!
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX1017XBMD-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain-lookup
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ description Trunk Link to SwitchWakaf
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.10
+ encapsulation dot1Q 10
+ ip address 180.58.120.1 255.255.255.0
+!
+interface FastEthernet0/0.20
+ encapsulation dot1Q 20
+ ip address 180.58.128.1 255.255.248.0
+!
+interface FastEthernet0/0.30
+ encapsulation dot1Q 30
+ ip address 180.58.136.1 255.255.248.0
+!
+interface FastEthernet0/0.40
+ no ip address
+!
+interface FastEthernet0/0.99
+ encapsulation dot1Q 99 native
+ ip address 180.58.176.1 255.255.248.0
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/0/0
+ ip address 10.1.1.1 255.0.0.0
+ clock rate 64000
+!
+interface Serial0/0/1
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+ip route 180.58.144.0 255.255.248.0 10.1.1.2 
+ip route 180.58.152.0 255.255.248.0 10.1.1.2 
+ip route 180.58.160.0 255.255.248.0 10.1.1.2 
+!
+ip flow-export version 9
+!
+!
+!
+banner motd !
+ FOR AUTHORISED ACCESS 
+ONLY!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
