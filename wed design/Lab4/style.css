@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      margin: 0 15px;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Pacifico', cursive;
+      text-align: left;
+      align-items: center;
+
+    }
+    .logo-img {
+      height: 40px;
+      width: 40px;
+      float: left;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #007bff;
+}
+.intro {
+    padding: 20px;
+    text-align: left;
+    background-color: #e9ecef;
+    border-left: 5px solid #007bff;
+    margin-bottom: 20px;
+}
+
+/* Navigation Buttons Styling */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+    border-top: 1px solid #eee;
+}
+
+.nav-button {
+    text-decoration: none;
+    background-color: #2833a7; /* Green for buttons */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+.nav-button:visited {
+    color: white;
+}
+.nav-button:hover {
+    background-color: #1e7e34;
+}
+
+/* Hide button if it's not needed (e.g., 'Backward' on index page) */
+.hidden {
+    visibility: hidden; 
+}
+.hero-image {
+    width: 100%;
+    max-height: 300px; /* Limits the height of the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+footer a {
+    color: #ffd700; /* Gold color for footer links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
