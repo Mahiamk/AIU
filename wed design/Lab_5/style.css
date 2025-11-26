@@ -1,0 +1,119 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  body.dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  body.dark h2 {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  body.dark-bg {
+    background: url("Assets/background.png") no-repeat center center fixed;
+    background-size: cover;
+    opacity: 90;
+    color: white;
+    backdrop-filter: blur(90px);
+    -webkit-backdrop-filter: blur(90px);
+  }
+
+  body.dark-bg h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+
+  /* body.dark-bg::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("Assets/background.png") no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: -1;
+  } */
+
+  .card {
+    background: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+
+  nav {
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007BFF;
+  }
+
+  section {
+    margin-bottom: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  .hover-box {
+    width: 100px;
+    height: 100px;
+    background: rgb(0, 44, 59);
+    transition: background 0.3s;
+  }
+
+  .hover-box:hover {
+    background: #007BFF
+  }
+
+  .animate-box {
+    margin: 30px;
+    margin-left: 200px;
+    width: 30px;
+    height: 30px;
+    background: green;
+    position: relative;
+    animation: moveBox 3s infinite alternate;
+  }
+
+  @keyframes moveBox {
+    from {
+      top: 0;
+    }
+
+    to {
+      top: -170px;
+    }
+  }
+
+  /* .animate2-box { width: 50px; height: 50px; background: green; position: relative; animation: moveBox 3s infinite alternate; }
+  @keyframes moveBox { from { left: 0; } to { left: 200px; } } */
+
+  .hidden {
+    display: none;
+  }
+
+  canvas {
+    border: 1px solid #000;
+  }
+
+  #svg {
+    display: block;
+    margin: 0 auto;
+    color: green;
+  }
